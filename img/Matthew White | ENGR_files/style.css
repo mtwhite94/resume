@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); 
+
+ /* Main Body */
+body {
+    font-family: Ariel;
+    font-size: 16px;
+    background: lightsteelblue;
+} 
+
+/******************* sidebar box **************************/
+.sidebar { 
+    margin: 0;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    background: slategrey; 
+    font-size: 1.4em; 
+    padding: 0%; 
+    overflow: auto;
+}  
+/* Sidebar text */
+.sidebar a {
+    display: block; 
+    color: lightsteelblue; 
+    padding: 16px; 
+    text-align: center;  
+    font-weight: bold;  
+    position: relative;
+    top: 40%; 
+
+}   
+/* Sidebar text Current page */ 
+.sidebar a.active {
+    color: whitesmoke;
+} 
+
+/* Hover Change */  
+.sidebar a:hover {
+    color: whitesmoke;
+}  
+.dropdown-container {
+    display: none;
+    padding-left: 3px;
+  }
+  
+/***********************************************************/
+/* main page content */ 
+.Intro { 
+    position: relative;
+    margin-left: 25%;  
+    margin-right: none; 
+    padding: 5px 5px; 
+    height:100%;  
+}   
+
+.about {
+    position: relative;
+    margin-left: 25%;  
+    margin-right: none; 
+    padding: 5px 5px; 
+    height:100%;  
+}  
+
+
+/************ JOB SECTION **********/  
+
+.about h1 {
+    text-align: center; 
+    text-transform: uppercase; 
+    text
+}
+.job {   
+    margin: auto; 
+    display: block;
+    background: ; 
+    border-style: solid; 
+    border-radius: 20px;
+    width: 600px;
+    height: auto; 
+    overflow: hidden;
+}  
+
+.job-title {   
+    float: right;
+    display: block; 
+    align: right;  
+    /* margin-left: 30%; 
+    margin-top: 0%; */
+    width: 440px; 
+    top: auto; 
+    height: 160px;
+}  
+
+.job-title h1 { 
+    margin: 0; 
+    margin-top: 45px; 
+    
+} 
+
+.job-title h2 {
+    margin: 0;
+} 
+.job-title h3 { 
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.company-logo {  
+    float: left;  
+    width: 150px;  
+    margin: 5px;
+}
+.company-logo img {
+    display: block;  
+    size: relative; 
+    border-radius: 10%;   
+    max-width: 100%; 
+    height: auto; 
+}
+
+.job h1 {
+    text-align: center;
+}
+.job h2 {
+    text-align: center;
+}
+.job h3 {
+    text-align: center;
+}  
+
+.job-bullets {
+    margin: 10px;
+}
+
+
+/***********************************************************/
+
+.Intro img {  
+    display: block;  
+    size: relative;
+    border-radius: 50%;  
+    margin-left: auto;
+    margin-right: auto;  
+    max-width: 100%; 
+    height: auto; 
+    } 
+.Intro h3 {   
+    text-align: center;
+    text-transform: uppercase; 
+    padding: none;
+} 
+
+.Intro h4 {   
+    text-align: center;
+    text-transform: uppercase; 
+    padding: none;
+} 
+.Intro h5 {   
+    text-align: center;
+    text-transform: uppercase; 
+    padding: none;
+} 
+.Intro button {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;  
+} 
+
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative; 
+    }
+    .sidebar a {float: Center;} 
+    .Intro {margin-left: 0%;}  .job { 
+        width: 400px;
+        height: auto;
+    }
+
+} 
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    } 
+    div.Intro {margin: none;}
+  }
